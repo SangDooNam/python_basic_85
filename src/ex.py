@@ -65,4 +65,15 @@
 #             count -= 1
 #         result.append(count)
 #     print(result)
+
+
+with open(file='data/task6.txt', mode='r') as task6:
+    result = []
+    #line = task6.readline()
+    while True:
+        line = task6.readline()
+        if not line:
+            break
+        result.append(task6.tell() - 1 - sum(result))
         
+    print(result)
