@@ -19,13 +19,13 @@
 
 
 #Task 3
-# with open(file='data/task3.txt', mode='r') as task3:
-#     content = task3.readlines()
-#     odd = [content[i] for i in range(len(content)) if not bool(i%2)]
-#     even = [content[i] for i in range(len(content)) if bool(i%2)]
-#     combined = odd + even
-#     result = ''.join(combined)
-#     print(result)
+with open(file='data/task3.txt', mode='r') as task3:
+    content = task3.readlines()
+    odd = [content[i] for i in range( len(content)) if bool(i%2)]
+    even = [content[i] for i in range( len(content)) if not bool(i%2)]
+    combined = even + odd
+    result = ''.join(combined)
+    print(result)
 
 
 #Task 4
